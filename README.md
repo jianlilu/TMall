@@ -203,7 +203,8 @@
 
 ### 订单项表:
 
->     CREATE TABLE orderitem (
+>  
+    CREATE TABLE orderitem (
     id int(11) NOT NULL AUTO_INCREMENT,
     pid int(11) DEFAULT NULL,
     oid int(11) DEFAULT NULL,
