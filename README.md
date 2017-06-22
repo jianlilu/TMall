@@ -99,7 +99,8 @@
 
 ### 用户表：
 
->     CREATE TABLE user (
+>     
+    CREATE TABLE user (
     id int(11) NOT NULL AUTO_INCREMENT,
 	name varchar(255) DEFAULT NULL,
     password varchar(255) DEFAULT NULL,
@@ -108,7 +109,8 @@
 
 ### 分类表:
 
->     CREATE TABLE category (
+>    
+    CREATE TABLE category (
     id int(11) NOT NULL AUTO_INCREMENT,
     name varchar(255) DEFAULT NULL,
     PRIMARY KEY (id)
@@ -117,7 +119,8 @@
 
 ### 属性表:
 
->      CREATE TABLE property (
+>      
+    CREATE TABLE property (
     id int(11) NOT NULL AUTO_INCREMENT,
     cid int(11) DEFAULT NULL,
     name varchar(255) DEFAULT NULL,
@@ -127,7 +130,8 @@
 
 ### 产品表:
 
->      CREATE TABLE product (
+>      
+    CREATE TABLE product (
     id int(11) NOT NULL AUTO_INCREMENT,
     name varchar(255) DEFAULT NULL,
     subTitle varchar(255) DEFAULT NULL,
@@ -143,7 +147,8 @@
 
 ### 属性值表:
 
->      CREATE TABLE propertyvalue (
+>      
+    CREATE TABLE propertyvalue (
     id int(11) NOT NULL AUTO_INCREMENT,
     pid int(11) DEFAULT NULL,
     ptid int(11) DEFAULT NULL,
@@ -156,7 +161,8 @@
 
 ### 产品图片表:
 
->      CREATE TABLE productimage (
+>     
+    CREATE TABLE productimage (
     id int(11) NOT NULL AUTO_INCREMENT,
     pid int(11) DEFAULT NULL,
     type varchar(255) DEFAULT NULL,
@@ -167,7 +173,8 @@
 
 ### 评价表:
 
->      CREATE TABLE review (
+>      
+    CREATE TABLE review (
     id int(11) NOT NULL AUTO_INCREMENT,
     content varchar(4000) DEFAULT NULL,
     uid int(11) DEFAULT NULL,
@@ -182,7 +189,8 @@
 
 ### 订单表:
 
->     CREATE TABLE order_ (
+>     
+    CREATE TABLE order_ (
     id int(11) NOT NULL AUTO_INCREMENT,
     orderCode varchar(255) DEFAULT NULL,
     address varchar(255) DEFAULT NULL,
